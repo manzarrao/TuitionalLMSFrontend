@@ -1,0 +1,67 @@
+.mainBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--dMain-color);
+  border-radius: 10px;
+  background-color: var(--dMain-color);
+  box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+  width: 70%;
+  max-width: 70%;
+  max-height: 90%;
+  height: max-content;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section1 > span {
+  border: 1px solid var(--main-color);
+  background-color: var(--white-color);
+  color: var(--main-color);
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.header > span {
+  padding: 5px 10px;
+  background-color: var(--black-color);
+  border-radius: 20px;
+  color: var(--white-color);
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: 16px;
+  line-height: 16px;
+}
+.section2 {
+  /* padding: 10px; */
+  /* height: 85%; */
+  /* overflow: hidden; */
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: 16px;
+  line-height: 16px;
+}

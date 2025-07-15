@@ -1,0 +1,80 @@
+.chartWrapper {
+  height: 220px;
+  width: 100%;
+}
+.chartWrapper :global(.recharts-surface) {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chartWrapper :global(.recharts-wrapper) {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Chart element styling */
+.grid line {
+  stroke: #f1f5f9;
+}
+
+.axis {
+}
+
+.axis text {
+  fill: #64748b;
+}
+
+.area {
+  transition: opacity 0.2s ease;
+}
+
+/* Tooltip styling */
+.tooltip {
+  min-width: 8rem;
+  display: grid;
+  gap: 0.375rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  background-color: white;
+  padding: 0.625rem 0.625rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  font-size: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  line-height: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+}
+
+.tooltipLabel {
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+}
+
+.tooltipContent {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.tooltipItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tooltipIndicator {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #3b82f6;
+  border-radius: 0.125rem;
+  flex-shrink: 0;
+}
+
+.tooltipName {
+  color: #6b7280;
+  flex: 1;
+}
+
+.tooltipValue {
+  font-weight: 500;
+  color: #111827;
+}

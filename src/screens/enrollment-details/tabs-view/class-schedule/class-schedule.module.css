@@ -1,0 +1,260 @@
+.classScheduleBox {
+  box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  border: 1px solid var(--input-box-shadow-color);
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.daysBox {
+  border-right: 1px dashed var(--input-box-shadow-color);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.daysNameBox {
+  width: 100%;
+  border-radius: 10px;
+  background: #f1f5f9;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: var(--text-size);
+  line-height: var(--text-size);
+  color: var(--white-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.daysNameBox > :nth-child(1) {
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--normal-text-size-vh);
+  line-height: var(--normal-text-size-vh);
+}
+
+.daysNameBox > :nth-child(2) {
+  background-color: #d8f1ff;
+  color: var(--main-color);
+  border-radius: 100%;
+  width: 4vh;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slotsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px 7.5px;
+}
+
+.availableBox {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #dafff0;
+  padding: 7.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--black-color);
+  font-size: var(--sText-size);
+  font-family: var(--leagueSpartan-regular-400);
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.availableBox > :nth-child(2) {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--text-size);
+}
+
+.availableBox:hover {
+  transform: scale(1.02);
+}
+
+.bookedBox {
+  border-radius: 10px;
+  border: 1px solid #38b6ff;
+  background: #b8e5ff;
+  box-shadow: 0px 0px 5px 0px rgba(56, 182, 255, 0.6);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 7.5px;
+  cursor: pointer !important;
+  transition: all 0.3 ease !important;
+}
+
+.bookedBox:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.bookedBox > p {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--normal-text-size);
+  background-color: var(--main-color);
+  padding-block: 2.5px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.nullBox {
+  width: 100%;
+  border-radius: 10px;
+  background: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--black-color);
+  font-size: var(--sText-size);
+  font-family: var(--leagueSpartan-regular-400);
+  padding: 10px;
+}
+
+.nullBox > :nth-child(1) {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--text-size);
+}
+
+.timeBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.timeBox :nth-child(1) {
+  font-family: var(--leagueSpartan-medium-500);
+  color: var(--black-color);
+  font-size: var(--normal-text-size);
+  margin: 0 !important;
+}
+
+.timeBox :nth-child(2) {
+  font-family: var(--leagueSpartan-regular-400);
+  color: var(--black-color);
+  font-size: var(--sText-size);
+  margin: 0 !important;
+}
+
+.facultyInfoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.imageNameBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--leagueSpartan-regular-400);
+  color: var(--black-color);
+  font-size: var(--sText-size);
+  /* border: 1px solid red; */
+}
+
+.imageNameBox > p {
+  width: 70%;
+}
+
+.imageNameBox > p > span {
+  color: var(--main-color);
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+.imageContainer > :nth-child(2) {
+  position: absolute;
+  left: 6px;
+}
+
+.imageBox {
+  width: 1.5vw;
+  height: 1.5vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  /* border: 1px solid var(--main-color); */
+}
+
+.emptyBox {
+  width: 100%;
+  border-radius: 10px;
+  background: #d8cfc4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #4a4a4a;
+  font-size: var(--normal-text-size);
+  padding: 10%;
+}
+
+.emptyBox > p {
+  text-align: center;
+  font-family: var(--leagueSpartan-regular-400);
+}
+
+.actionButtonsBox {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dMain-color);
+  border-radius: 7.5px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  cursor: pointer;
+  transition: all transform 0.4s ease;
+}
+
+.iconBox:hover {
+  transform: scale(1.09);
+}
+
+.iconBox > svg {
+  font-size: var(--normal-text-size);
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.subWrapper {
+  border-radius: 10px;
+  box-shadow: 0px -1px 10px 0px rgba(56, 182, 255, 0.35) inset;
+  height: 5.5vh;
+  max-height: 50px;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+.imageBox {
+  position: relative;
+  height: clamp(
+    var(--sl-text-size-rem),
+    var(--regular-text-size-vw),
+    var(--regular-text-size-rem)
+  );
+  width: clamp(
+    var(--sl-text-size-rem),
+    var(--regular-text-size-vw),
+    var(--regular-text-size-rem)
+  );
+  margin-left: 10px;
+  overflow: hidden;
+}

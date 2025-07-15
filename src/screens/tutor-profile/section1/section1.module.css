@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 25px;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: max-content;
+}
+
+.box1_inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageBox {
+  overflow: hidden;
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 12px;
+  border: 1px solid #d3d3d3;
+}
+
+.textBox {
+  /* border: 1px solid red; */
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.textBox > * {
+  margin: 0 !important;
+}
+
+.name {
+  font-size: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
+  line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
+  font-family: var(--leagueSpartan-semiBold-600);
+
+  /* border: 1px solid red; */
+}
+
+.email {
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+  line-height: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+  font-family: var(--leagueSpartan-regular-400);
+  /* border: 1px solid red; */
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+  line-height: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+  font-family: var(--leagueSpartan-regular-400);
+}
+
+.iconBox > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconBox > span {
+  color: var(--main-color);
+  font-size: var(--text-size);
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.heading {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: var(--leagueSpartan-medium-500);
+  display: flex;
+  align-items: center;
+}
+
+.subjectsBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.buttonBox {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.actionButtonBox {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 7.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetLinkButton {
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    gap: 20px;
+  }
+  .subjectsBox {
+    max-height: 250px;
+  }
+}

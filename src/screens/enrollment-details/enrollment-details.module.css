@@ -1,0 +1,141 @@
+.enrollmentContainer {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 0px !important;
+}
+
+.enrollmentBox {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.enrollmentSection1 {
+  padding: 10px 2.042vw;
+  background-color: var(--dMain-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+}
+
+.enrollmentImageContainer {
+  width: 3.5vw;
+  height: 3.5vw;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid var(--main-color);
+}
+
+.enrollmentTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: max-content;
+}
+
+.enrollmentTextContainer > :nth-child(1) {
+  font-size: var(--regular-text-size-vh);
+  color: var(--secondary-color);
+  font-family: var(--leagueSpartan-medium-500);
+  /* border: 1px solid red; */
+}
+
+.enrollmentTextContainer > :nth-child(2) {
+  font-size: var(--regular-text-size-vh);
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-semiBold-600);
+}
+
+.enrollmentItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  /* border: 1px solid red; */
+}
+
+.enrollmentItem > :nth-child(1) {
+  font-size: var(--regular-text-size-vh);
+  color: var(--secondary-color);
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.enrollmentItem > :nth-child(2) {
+  font-size: var(--regular-text-size-vh);
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-semiBold-600);
+}
+
+.smallLoader {
+  /* border: 1px solid red; */
+  height: 50%;
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallLoaderChild {
+  height: 100%;
+  width: 100%;
+}
+
+.smallLoaderChild > svg {
+  color: var(--main-color);
+  font-size: 0.2vw;
+}
+.enrollmentSection2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  /* border: 1px solid green; */
+}
+
+.actions {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--regular-text-size-vh);
+}
+
+.buttonTabsBox {
+  width: 100%;
+  width: 25%;
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+}
+
+.addModal {
+  width: max-content;
+  border-radius: 100%;
+  width: 2vw;
+  height: 2vw;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.addModal > svg {
+  color: #2d2d2d;
+  width: 70%;
+  height: 70%;
+}

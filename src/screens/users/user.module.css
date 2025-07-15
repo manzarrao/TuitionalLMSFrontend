@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  height: max-content;
+  flex: 1;
+}
+
+.aside {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}

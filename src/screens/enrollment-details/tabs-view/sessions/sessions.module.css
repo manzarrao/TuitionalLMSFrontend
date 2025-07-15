@@ -1,0 +1,132 @@
+.sessionsContainer {
+  padding: 15px 10px;
+  box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  border: 1px solid var(--input-box-shadow-color);
+  flex-grow: 1;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.sessionsContainer > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: var(--heading-size);
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.sessionsBox {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f1faff;
+  box-shadow: -17px 21px 7px 0px rgba(0, 0, 0, 0),
+    -11px 13px 7px 0px rgba(0, 0, 0, 0.01), -6px 7px 6px 0px rgba(0, 0, 0, 0.03),
+    -3px 3px 4px 0px rgba(0, 0, 0, 0.05), -1px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+.child1 {
+  padding: 10px;
+  border-left: 3px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  /* border: 1px solid red; */
+  width: 30%;
+}
+
+.child1 > :nth-child(1) {
+  padding: 5px;
+  text-align: center;
+  color: #36a07a;
+  background-color: #caf8e8;
+  width: max-content;
+  border-radius: 5px;
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.child1 > :nth-child(2) {
+  font-family: var(--leagueSpartan-medium-500);
+  color: var(--black-color);
+  font-size: var(--normal-text-color);
+}
+
+.child1 > :nth-child(3) {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.child1 > :nth-child(3) > div {
+  position: relative;
+  width: 1vw;
+  height: 1vw;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid var(--main-color);
+}
+
+.child1 > :nth-child(3) > p {
+  font-family: var(--leagueSpartan-regular-400);
+  color: var(--black-color);
+  font-size: var(--text-color);
+}
+
+.child2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--leagueSpartan-regular-400);
+  color: var(--text-color);
+  font-size: var(--text-color);
+  width: 30%;
+  /* border: 1px solid red; */
+}
+
+.child3 {
+  padding: 10px;
+  border-radius: 7.5px;
+  background: #c7eaff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  width: 33%;
+  /* border: 1px solid red; */
+}
+
+.child3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.child3 div > :first-child {
+  font-family: var(--leagueSpartan-regular-400);
+  color: var(--text-color);
+  font-size: var(--normal-text-size);
+  text-align: center;
+}
+
+.child3 div > :nth-child(2) {
+  font-family: var(--leagueSpartan-medium-500);
+  color: var(--black-color);
+  font-size: var(--text-size);
+  text-align: center;
+}

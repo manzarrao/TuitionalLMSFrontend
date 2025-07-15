@@ -1,0 +1,77 @@
+.container {
+  border-radius: 10px;
+  background: #b8e5ff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 1 calc(25% - 15px);
+  height: max-content;
+  cursor: pointer;
+  transition: all transform 0.4s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.textIconBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-size);
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dMain-color);
+  border-radius: 5px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  cursor: pointer;
+  transition: all transform 0.4s ease;
+}
+
+.iconBox:hover {
+  transform: scale(1.06);
+}
+
+.subText {
+  font-size: var(--normal-text-size);
+  font-family: var(--leagueSpartan-medium-500);
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.dateBox {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-around;
+  gap: 22px;
+  padding: 10px 15px;
+}
+
+.dateBox > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dateBox > div > span:nth-child(1) {
+  font-size: var(--normal-text-size);
+  font-family: var(--leagueSpartan-regular-400);
+  color: var(--text-color);
+}
+
+.dateBox > div > span:nth-child(2) {
+  font-size: var(--normal-text-size);
+  font-family: var(--leagueSpartan-semiBold-600);
+  color: var();
+}

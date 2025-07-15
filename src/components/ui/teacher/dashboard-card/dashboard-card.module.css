@@ -1,0 +1,65 @@
+.box {
+  border-radius: 15px;
+  width: calc(60% - 10px);
+  height: max-content;
+  padding: 10px;
+  background: url("/assets/svgs/texture_background.svg") rgb(250, 250, 250) 10% /
+    cover no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid red; */
+}
+
+.mainText {
+  font-family: var(--leagueSpartan-bold-700);
+  font-size: clamp(1rem, calc(0.5rem + 0.68vw), 1.25rem);
+  line-height: clamp(1rem, calc(0.5rem + 0.68vw), 1.25rem);
+  color: var(--black-color);
+  letter-spacing: -0.085px;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+}
+
+.bottomBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.number {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: clamp(1rem, calc(0.5rem + 0.68vw), 1.25rem);
+  line-height: clamp(1rem, calc(0.5rem + 0.68vw), 1.25rem);
+  color: var(--main-color);
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+}
+
+.logoBox {
+  width: clamp(1.75rem, 1.841vw, 2.188rem);
+  height: clamp(1.75rem, 1.841vw, 2.188rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.1))
+    drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.09))
+    drop-shadow(-7px 8px 6px rgba(0, 0, 0, 0.05))
+    drop-shadow(-12px 14px 7px rgba(0, 0, 0, 0.01))
+    drop-shadow(-19px 21px 8px rgba(0, 0, 0, 0));
+}
+
+.logoBox > svg {
+  width: 85%;
+  height: 85%;
+  color: var(--white-color);
+}
