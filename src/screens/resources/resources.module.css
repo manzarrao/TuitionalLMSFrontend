@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content;
+}
+
+.filter {
+  display: flex;
+  gap: 22px;
+}
+
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

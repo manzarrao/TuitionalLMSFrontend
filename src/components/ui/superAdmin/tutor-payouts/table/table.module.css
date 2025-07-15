@@ -1,0 +1,145 @@
+.table {
+  flex: 1 1 calc(100% - 10px);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableHead {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  background-color: #f6f6f6;
+  padding: 1.042vw;
+}
+
+.tableHeadCell {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--regular-text-size-vh);
+  font-style: normal;
+  line-height: 16px;
+  color: var(--text-color);
+  width: 12.5%;
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 1 calc(100% - 10px);
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.tableRow {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d7dde2;
+  height: max-content;
+  padding: 1.042vw;
+}
+
+.tableColumn {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--medium-text-size-vh);
+  line-height: var(--medium-text-size-vh);
+  color: var(--black-color);
+  width: 12.5%;
+  height: max-content;
+  min-height: max-content;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageBox {
+  overflow: hidden;
+  border-radius: 40px;
+  position: relative;
+  border: 100%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.sessionCountBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #eceff2;
+  width: max-content;
+}
+
+.logoBox {
+  width: var(--large-regular-text-size-vw);
+  height: var(--large-regular-text-size-vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  position: relative;
+}
+
+.logoBox > svg {
+  width: 90%;
+  height: 90%;
+  color: var(--white-color);
+}
+
+.status {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: max-content;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-100%);
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 4px 8px 0px rgba(94, 94, 94, 0.39);
+  height: max-content;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--black-color);
+  margin-bottom: 10px;
+}
+
+.tooltipRow > span {
+  height: var(--regular-text-size-rem);
+  width: var(--regular-text-size-rem);
+  background-color: var(--main-color);
+  border-radius: 100%;
+}
+
+.tooltipRow > p {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--medium-text-size-vh);
+  line-height: var(--medium-text-size-vh);
+  color: var(--black-color);
+  margin: 0px !important;
+}

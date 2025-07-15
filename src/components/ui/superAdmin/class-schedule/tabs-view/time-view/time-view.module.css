@@ -1,0 +1,66 @@
+.container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  overflow-y: auto;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--normal-text-size-vh);
+  color: var(--text-color);
+  height: 7%;
+  margin: 0px !important;
+}
+
+.heading > svg {
+  cursor: pointer;
+  color: var(--black-color);
+}
+
+.heading > span {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--normal-text-size-vh);
+  color: var(--black-color);
+}
+
+.section2 {
+  /* border: 10px solid yellow; */
+  height: 93%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section2 > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--heading-size);
+  color: var(--black-color);
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* border: 1px solid red; */
+}
+
+.slotsBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 6px;
+  /* border: 1px solid red; */
+}

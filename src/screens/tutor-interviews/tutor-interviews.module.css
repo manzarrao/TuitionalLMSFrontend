@@ -1,0 +1,36 @@
+.ongoingClassBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.innerBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.errorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 95%;
+  width: 100%;
+}
+
+.imageBox {
+  position: relative;
+  overflow: hidden;
+  height: 98%;
+  width: 50%;
+}
+
+.errorBox > p {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--sub-heading-vh);
+}

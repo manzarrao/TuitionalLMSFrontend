@@ -1,0 +1,17 @@
+.loaderBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.loader {
+  width: 8vh !important;
+  height: 8vh !important;
+}
+
+.loader > svg {
+  color: var(--main-color);
+}
