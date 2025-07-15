@@ -1,0 +1,16 @@
+.chartContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.statsHover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: var(--extraSmall-text-size-vh);
+  line-height: var(--extraSmall-text-size-vh);
+  font-family: var(--leagueSpartan-medium-500);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: max-content;
+  cursor: pointer;
+}

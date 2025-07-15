@@ -1,0 +1,67 @@
+.statCard {
+  border-radius: 15px;
+  width: calc(60% - 10px);
+  height: max-content;
+  padding: 10px;
+  background: url("/assets/svg/texture_background.svg") rgb(250, 250, 250) 10% /
+    cover no-repeat;
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.statHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.statTitle {
+  font-family: var(--leagueSpartan-bold-700);
+  font-size: var(--normal-text-size-vh);
+  color: var(--black-color);
+  letter-spacing: -0.085px;
+  margin: 0px !important;
+}
+
+.statValueBlue {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--normal-text-size-vh);
+  line-height: var(--normal-text-size-vh);
+  color: var(--main-color);
+  margin: 0px !important;
+}
+
+.statusContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--extraSmall-text-size-vh);
+  line-height: var(--extraSmall-text-size-vh);
+  color: var(--black-color);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px !important;
+  font-size: 20px;
+}
+
+.statusPending {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fcc8c8;
+  color: #c5371b;
+}
+.statusPaid {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #a0ffc0;
+  color: #286321;
+}

@@ -1,0 +1,213 @@
+.cardBox {
+  border-radius: 10px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  background-color: #f1faff;
+  box-shadow: 2px 2px 3px 0.5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.firstBox {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #c7eaff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.firstBox > :nth-child(2) {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.firstBox,
+.teacherBox > :nth-child(2) > :nth-child(1),
+.firstBox.teacherBox > :nth-child(2) > :nth-child(2) {
+  font-size: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  line-height: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  margin: 0 !important;
+  /* border: 1px solid red; */
+}
+
+.firstBox,
+.teacherBox > :nth-child(2) > :nth-child(1) {
+  font-family: var(--leagueSpartan-semiBold-600);
+  color: var(--black-color);
+  margin: 0px !important;
+}
+
+.firstBox,
+.teacherBox > :nth-child(2) > :nth-child(2) {
+  font-family: var(--leagueSpartan-medium-500);
+  color: var(--text-color);
+  margin: 0px !important;
+}
+
+.teacherBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.teacherBox > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+.studentsBoxContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.studentsBoxContainer > p {
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  line-height: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  color: var(--text-color);
+  margin: 0px !important;
+  letter-spacing: 1px;
+}
+
+.studentsBox {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+.imagesBox {
+  display: flex;
+  position: relative;
+}
+
+.imageBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 4vh;
+  width: 4vh;
+}
+
+.imagesBox > :nth-child(2) {
+  position: absolute;
+  left: 10px;
+}
+
+.studentsBox > p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  line-height: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  color: var(--black-color);
+}
+
+.studentsBox > :nth-child(3) {
+  color: var(--main-color);
+}
+
+.secondBox {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1faff;
+  gap: 10px;
+}
+
+.seperationBox {
+  width: 1.5px;
+  height: 2.5vh;
+  background: linear-gradient(180deg, #e6f4f4 0%, #38b6ff 50%, #e2f3f1 100%);
+}
+
+.nameImageBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nameImageBox > p {
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  line-height: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  margin: 0px !important;
+  /* border: 1px solid red; */
+}
+
+.bottomBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottomBox > * {
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  line-height: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  border-radius: 5px;
+  background-color: #e4f5ff;
+  padding: 5px 10px;
+  margin: 0px !important;
+  text-align: center;
+}
+
+.thirdBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding-right: 10px;
+  width: max-content;
+}
+
+.thirdBox > p {
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  line-height: clamp(0.625rem, 0.46rem + 0.45vw, 1rem);
+  margin: 0px !important;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.thirdBox > :nth-child(1) {
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 576px) {
+  .teacherBox {
+    display: flex;
+  }
+
+  .firstBox {
+    justify-content: center;
+  }
+
+  .studentsBox,
+  .teacherBox {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .studentsBox,
+  .teacherBox p {
+    text-align: center;
+  }
+}

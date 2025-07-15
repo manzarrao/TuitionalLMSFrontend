@@ -1,0 +1,36 @@
+.tooltipLabel {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.tooltipContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tooltipValue {
+  font-size: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  line-height: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .container {
+    height: 300px;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .chartContainer {
+    height: 220px;
+  }
+}

@@ -1,0 +1,111 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.section1 {
+  display: flex;
+  gap: 10px;
+  height: max-content;
+}
+
+.cardsSection {
+  width: max-content;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  max-height: 100%;
+}
+
+.graphSection {
+  height: max-content;
+  width: max-content;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  flex-grow: 0;
+}
+
+.graphSection > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  align-self: flex-end;
+  height: max-content;
+}
+
+.graphSectionIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.icon {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px -1px 8px 0px rgba(56, 182, 255, 0.42) inset;
+  cursor: pointer;
+}
+
+.icon > svg {
+  font-size: 2vh !important;
+  color: #1b2228;
+}
+
+.stats {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.stats > p {
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: var(--medium-text-size-vh);
+  color: var(--black-color);
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stats > :nth-child(1) > span {
+  background-color: var(--main-color);
+}
+
+.stats > :nth-child(2) > span {
+  background-color: var(--light-blue);
+}
+
+.stats > :nth-child(3) > span {
+  background-color: #e3f2fd;
+}
+
+.stats > p > span {
+  display: flex;
+  width: var(--medium-text-size-vh) !important;
+  height: var(--medium-text-size-vh) !important;
+  border-radius: 100%;
+}

@@ -1,0 +1,82 @@
+.mainConatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.notBox {
+  width: max-content;
+  flex-shrink: 0;
+  border: 2px solid var(--dMain-color);
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px -1px 10px 0px rgba(56, 182, 255, 0.35) inset;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: max-content;
+}
+
+.notificationsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: clamp(44px, 3.75vw, 60px);
+  width: clamp(44px, 3.75vw, 60px);
+  background-color: var(--dMain-color);
+  transition: transform 0.3s ease;
+}
+
+.notificationsIcon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.number {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(20px, 1.5vw, 24px);
+  width: clamp(20px, 1.5vw, 24px);
+  margin-right: 15px;
+  border-radius: 100%;
+  padding: 0;
+}
+.number > p {
+  font-family: var(--leagueSpartan-regular-400);
+  color: #fff;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: clamp(16px, 1.25vw, 20px);
+  margin: 0 !important;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, #e6f4f4 0%, #38b6ff 50%, #e2f3f1 100%);
+}
+
+.picContainer {
+  display: flex;
+  align-items: center;
+}
+
+.picBox {
+  position: relative;
+  height: clamp(44px, 3.75vw, 60px);
+  width: clamp(44px, 3.75vw, 60px);
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: -17px 27px 9px 0px rgba(0, 0, 0, 0),
+    -11px 17px 8px 0px rgba(0, 0, 0, 0.01),
+    -6px 10px 7px 0px rgba(0, 0, 0, 0.05), -3px 4px 5px 0px rgba(0, 0, 0, 0.09),
+    -1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}

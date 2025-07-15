@@ -1,0 +1,126 @@
+.subtitle {
+  color: #6b7280;
+  margin: 0;
+  font-size: clamp(0.75rem, 0.669rem + 0.38vw, 1.125rem) !important;
+  line-height: clamp(0.75rem, 0.669rem + 0.38vw, 1.125rem);
+}
+
+/* Content layout */
+.contentWrapper {
+  display: flex;
+  height: 220px;
+}
+
+/* Map container - left side */
+.mapContainer {
+  width: 50%;
+  height: 210px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.mapPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mapIcon {
+  height: 6rem;
+  width: 6rem;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.mapText {
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  line-height: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  color: #6b7280;
+  max-width: 80%;
+  margin: 0;
+}
+
+/* Country list container - right side */
+.countryListContainer {
+  width: 50%;
+  overflow-y: auto;
+  padding-left: 1rem;
+}
+
+.countryList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Country item styling */
+.countryItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countryNameWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.countryDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #004771;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+.countryName {
+  font-size: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  line-height: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  font-weight: 500;
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.countryMetrics {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countryCount {
+  font-size: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  line-height: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  color: #6b7280;
+}
+
+.progressBarBg {
+  width: 4rem;
+  height: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: #004771;
+  border-radius: 9999px;
+}
+
+.countryPercentage {
+  font-size: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  line-height: clamp(0.625rem, 0.541rem + 0.382vw, 1rem);
+  color: #6b7280;
+}
+
+.mapContainer {
+}
+
+/* You can remove these placeholder styles since we're replacing it */
+.mapPlaceholder {
+  display: none;
+}
