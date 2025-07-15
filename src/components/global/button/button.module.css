@@ -1,0 +1,39 @@
+.button {
+  background-color: var(--main-color);
+  color: #ffff;
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  line-height: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  user-select: none;
+  height: 5.5vh;
+  max-height: 50px;
+  min-height: 30px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.loader {
+  color: #ffffff !important;
+  height: 2.5vh !important;
+  width: 2.5vh !important;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon > svg {
+  height: var(--regular-text-size-vh);
+  width: var(--regular-text-size-vh);
+}

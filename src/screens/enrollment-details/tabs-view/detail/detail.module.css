@@ -1,0 +1,191 @@
+.detailContainer {
+  padding: 0 !important;
+  flex-grow: 1;
+  display: flex !important;
+  gap: 22px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loaderBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loaderBox > span {
+  width: 8vw !important;
+  height: 8vw !important;
+}
+
+.loaderBox > span > svg {
+  color: var(--main-color);
+}
+
+.smallLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.smallLoader > span > svg {
+  color: var(--main-color);
+}
+
+.errorBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 79%;
+  width: 100%;
+}
+
+.errorBox > h1 {
+  font-size: 2.2vw;
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.section1 {
+  background-color: #fff;
+  height: 100%;
+  width: calc(50% - 10px);
+  border-radius: 10px;
+  box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--input-box-shadow-color);
+  /* border: 1px solid red; */
+}
+
+.header > :nth-child(1) {
+  margin: 0px !important;
+  color: var(--black-color);
+  font-size: var(--sub-heading);
+  font-family: var(--leagueSpartan-semiBold-600);
+}
+
+.header > :nth-child(2) {
+  margin: 0px !important;
+  color: var(--text-color);
+  font-size: var(--text-size);
+  font-family: var(--leagueSpartan-regular-400);
+}
+
+.body {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* border: 1px solid green; */
+}
+
+.child {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--input-box-shadow-color);
+}
+
+.child div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.child div > p {
+  font-family: var(--leagueSpartan-medium-500);
+  color: var(--black-color);
+  font-size: var(--normal-text-size);
+}
+
+.imageBox {
+  overflow: hidden;
+  border-radius: 40px;
+  position: relative;
+  border: 100%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.section2 {
+  height: 100%;
+  /* border: 1px solid red; */
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section2Childs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section2Childs > p {
+  font-size: var(--sub-heading);
+  line-height: var(--sub-heading);
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.componentsBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.components {
+  border-radius: 10px;
+  box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  background-color: var(--white-color);
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.components > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+.components > div > p {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+  font-size: 1.5vw;
+  color: var(--main-color);
+  font-family: var(--leagueSpartan-semiBold-600);
+}
+
+.components > div > div {
+  background-color: var(--dMain-color);
+  border-radius: 100%;
+  width: 2vw;
+  height: 2vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.components > p {
+  font-size: var(--text-size);
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-semiBold-600);
+}

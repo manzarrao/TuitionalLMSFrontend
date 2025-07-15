@@ -1,0 +1,49 @@
+.container {
+  flex: 0 1remc (100% - 10px);
+  min-height: 0;
+  background-color: transparent;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 5px;
+  width: max-content;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+.wrapper > :nth-child(1) {
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.timeBox {
+  display: flex;
+  gap: 10px;
+}
+
+.timeBox * {
+  margin: 0px !important;
+}
+
+.imageBox {
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.textFields {
+  margin: 0px !important;
+  padding: 0px !important;
+  height: fit-content;
+  font-size: 0.7rem;
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-regular-400);
+}

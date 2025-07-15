@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+
+.section1 {
+  height: max-content;
+}
+
+.heading {
+  font-family: var(--leagueSpartan-semiBold-600);
+  line-height: var(--sub-heading-vh);
+  font-size: var(--sub-heading-vh);
+  margin: 0px !important;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px;
+  height: max-content;
+  background-color: #c7ebff;
+}
+
+.accountInfoBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: max-content;
+  padding: 10px;
+}
+
+.imageBox {
+  overflow: hidden;
+  border-radius: 100%;
+  position: relative;
+  width: 20vh;
+  height: 20vh;
+}
+
+.personalInfoBox2 {
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  flex: 1;
+  height: max-content;
+  align-items: center;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fields > * {
+  margin: 0px !important;
+  line-height: var(--large-regular-text-size-vh);
+  font-size: var(--large-regular-text-size-vh);
+}
+
+.fields > :nth-child(1) {
+  color: var(--text-color);
+  font-family: var(--leagueSpartan-medium-500);
+}
+
+.fields > :nth-child(2) {
+  color: var(--black-color);
+  font-family: var(--leagueSpartan-semiBold-600);
+}
+
+.flagContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.flag {
+  overflow: hidden;
+  border-radius: 5px;
+  width: max-content;
+  height: max-content;
+}
+
+.flag > img {
+  width: 2.75vh;
+  height: 2.75vh;
+  border-radius: 5px;
+}
+
+.flagContainer > p {
+  margin: 0px !important;
+}
+
+.section2 {
+  flex: 0 1 calc(100% - 10px);
+  min-height: 0;
+}
+
+.profileAccountInfoBox {
+  display: flex;
+  align-items: flex-start;
+  flex: 0 1 calc(100% - 10px);
+  min-height: 0;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.connectedEmails {
+  font-family: var(--leagueSpartan-medium-500);
+  line-height: var(--normal-text-size-vh);
+  font-size: var(--normal-text-size-vh);
+  margin: 0px !important;
+}
+
+.emailNamesBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  overflow: auto;
+}
+
+.accountsRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.iconBox {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dMain-color);
+  border-radius: 5px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  cursor: pointer;
+  transition: all transform 0.4s ease;
+}
+
+.iconBox:hover {
+  transform: scale(1.1);
+}

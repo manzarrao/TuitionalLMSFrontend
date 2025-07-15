@@ -1,0 +1,110 @@
+.pagination {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  /* border: 2px solid pink;   */
+}
+
+.pagination > div {
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: var(--normal-text-size);
+  color: #434343;
+  margin: 0 !important;
+  /* border: 2px solid pink; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination > nav {
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  overflow: hidden;
+}
+
+.pagination > nav > ul {
+  height: max-content;
+}
+
+.pagination > nav > ul > li {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination > nav > ul > li > button {
+  color: var(--text-color);
+  border: 1.12px solid #d4d4d4;
+  width: max-content;
+  height: max-content;
+  min-width: 40px;
+}
+
+.pagination > nav > ul > :first-child > button {
+  color: var(--main-color);
+  border: none;
+}
+
+.pagination > nav > ul > :first-child > button:hover {
+  background: none;
+}
+
+.pagination > nav > ul > :last-child > button {
+  color: var(--main-color);
+  border: none;
+}
+
+.pagination > nav > ul > :last-child > button:hover {
+  background: none;
+}
+
+.pagination > nav > ul > li > button {
+  font-size: var(--normal-text-size);
+  font-family: var(--leagueSpartan-regular-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination > nav > ul > li > button > svg {
+  font-size: var(--text-size);
+}
+
+.selectBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.entries {
+  color: var(--main-color);
+}
+
+.dropDownBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.dropDownBox > select {
+  cursor: pointer;
+  width: 3vw;
+  height: 3.5vh;
+  min-width: 40px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--black-color);
+  font-size: var(--normal-text-size);
+  font-family: var(--leagueSpartan-regular-400);
+}

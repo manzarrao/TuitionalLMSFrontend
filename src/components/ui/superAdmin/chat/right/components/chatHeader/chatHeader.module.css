@@ -1,0 +1,93 @@
+.chatHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.chatHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chatHeaderRight {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 5vh !important;
+  height: 5vh !important;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.userName {
+  margin: 0;
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.userStatus {
+  font-size: 1rem;
+  font-family: var(--leagueSpartan-medium-500);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.userStatus.online {
+  color: #4caf50;
+}
+
+.userStatus.offline {
+  color: #757575;
+}
+
+.threadInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.threadLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.threadSubtitle {
+  font-size: 12px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chatHeader {
+    padding: 8px 12px;
+  }
+
+  .avatar {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .userName {
+    font-size: 14px;
+  }
+
+  .threadLabel {
+    font-size: 14px;
+  }
+}

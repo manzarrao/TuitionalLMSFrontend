@@ -1,0 +1,57 @@
+.mainBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  max-width: 35%;
+  border: 1px solid var(--dMain-color);
+  border-radius: 10px;
+  background-color: var(--dMain-color);
+  box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.05));
+  padding: 20px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.deleteLogoBox {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+}
+
+.headingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.headingBox > :nth-child(1) {
+  text-align: center;
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: var(--sub-heading);
+  line-height: var(--sub-heading);
+  margin: 0 !important;
+}
+
+.headingBox > :nth-child(2) {
+  text-align: center;
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: var(--normal-text-size);
+  line-height: var(--normal-text-size);
+  margin: 0 !important;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+.container {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0px -1px 10px 0px rgba(56, 182, 255, 0.2) inset;
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+.container > h2 {
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: clamp(25px, 16.5492957746px + 1.6901408451vw, 50px);
+}
+
+.gridContainer1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.gridContainer2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.gridContainer4 {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 15px;
+}
+
+.gridContainer6 {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 15px;
+}
+
+@media (max-width: 1281px) {
+  .gridContainer1 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .gridContainer2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContainer1,
+  .gridContainer2,
+  .gridContainer4,
+  .gridContainer6 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

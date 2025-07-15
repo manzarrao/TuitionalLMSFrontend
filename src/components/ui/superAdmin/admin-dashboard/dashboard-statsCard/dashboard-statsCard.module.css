@@ -1,0 +1,182 @@
+/* Base styles */
+.statsCard {
+  border-radius: 0.75rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  animation: scaleIn 0.3s ease-out;
+  font-family: var(--leagueSpartan-medium-500);
+  background-color: var(--white-color);
+}
+
+.compact {
+  padding: 0.625rem;
+}
+
+.default {
+  padding: 0.625rem;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Text container */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textContainerDefault {
+  gap: 5px;
+}
+
+.textContainerCompact {
+  gap: 5px;
+}
+
+/* Text styling */
+.statsLabel {
+  font-size: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+  line-height: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.statsValue {
+  font-weight: 600;
+}
+
+.valueDefault {
+  font-size: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+  line-height: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+}
+
+.valueCompact {
+  font-size: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+  line-height: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+}
+
+/* Icon styling */
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.iconDefault {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+.iconBlue {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.iconGreen {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.iconAmber {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.iconRed {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.iconPurple {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+/* Trend styling */
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: clamp(0.875rem, 0.791rem + 0.382vw, 1rem);
+  line-height: clamp(0.875rem, 0.791rem + 0.382vw, 1rem);
+
+  margin-top: 0.5rem;
+}
+
+.trendPositive {
+  color: #47bcff;
+}
+
+.trendNegative {
+  color: #004771;
+}
+
+.description {
+  font-size: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+  line-height: clamp(0.875rem, 0.791rem + 0.382vw, 1.25rem);
+  color: #6b7280;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Skeleton loader styles */
+.loading .skeletonTitle,
+.loading .skeletonValue,
+.loading .skeletonTrend,
+.loading .skeletonIcon {
+  background-color: #e5e7eb; /* Light gray */
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonTitle {
+  width: 60%;
+  height: 16px;
+  margin-bottom: 8px;
+}
+
+.skeletonValue {
+  width: 40%;
+  height: 24px;
+  margin-bottom: 12px;
+}
+
+.skeletonTrend {
+  width: 50%;
+  height: 14px;
+}
+
+.skeletonIcon {
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-color: #e5e7eb;
+  }
+  50% {
+    background-color: #f3f4f6;
+  }
+  100% {
+    background-color: #e5e7eb;
+  }
+}

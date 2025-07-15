@@ -1,0 +1,39 @@
+.container {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px -1px 10px 0px rgba(56, 182, 255, 0.35) inset;
+  height: 5.5vh;
+  min-height: 35px;
+  max-height: 50px;
+  /* border: 1px solid red; */
+}
+
+.iconBox {
+  padding: 5px 10px;
+  background-color: var(--dMain-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.iconBox > svg {
+  color: var(--main-color);
+  font-size: var(--text-size);
+}
+
+.container > input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: var(--normal-text-size);
+  color: var(--black-color);
+  height: 100%;
+  background-color: transparent;
+  width: 100%;
+}

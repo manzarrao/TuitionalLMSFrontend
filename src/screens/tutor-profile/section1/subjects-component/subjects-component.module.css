@@ -1,0 +1,72 @@
+.container {
+  border-radius: 10.377px;
+  border: 1px solid #dfdfdf;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #a573d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7.5px;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.box1 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+.box1 > div > :first-child {
+  font-size: var(--text-size);
+  font-family: var(--leagueSpartan-semiBold-600);
+}
+
+.box1 > div > p > span {
+  color: #aaaaaa;
+  font-size: var(--normal-text-size);
+}
+
+.box1 > div > :last-child {
+  font-size: var(--text-size);
+  font-family: var(--leagueSpartan-light-300);
+  color: #7c7c7c;
+}
+
+.box2 {
+  display: flex;
+  font-size: var(--text-size);
+  font-family: var(--leagueSpartan-semiBold-600);
+  gap: 5px;
+}
+
+.box2 > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.box2 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--leagueSpartan-reglar-400);
+  color: #aeaeae;
+}
+
+.box2 > span > svg {
+  font-size: 1.2vw;
+}
+
+.box2 > span > svg:hover {
+  cursor: pointer;
+}
+
+.placeholderStyle::placeholder {
+  font-family: var(--leagueSpartan-semiBold-500);
+  color: #9a9a9a;
+  font-size: 0.625vw;
+}

@@ -1,0 +1,9 @@
+.errorBox {
+  width: 100%;
+  height: 100%;
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: var(--sub-medium-heading-vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,82 @@
+.container {
+  background-color: var(--white-color);
+  box-shadow: 0px -1px 10px 0px rgba(56, 182, 255, 0.42) inset;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  padding: 1.042vw;
+}
+
+.aside1,
+.aside2 {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  flex-grow: 1;
+}
+
+.aside2 {
+  justify-content: flex-end;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.aside1Box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  gap: 10px;
+}
+
+.aside1Box > :nth-child(1),
+.aside1Box > :nth-child(2) {
+  margin: 0px !important;
+}
+
+.aside1Box > :nth-child(1) {
+  font-family: var(--leagueSpartan-semiBold-600);
+  font-size: var(--normal-text-size-rem);
+  line-height: var(--normal-text-size-rem);
+  color: var(--black-color);
+}
+
+.aside1Box > :nth-child(2) {
+  font-family: var(--leagueSpartan-bold-700);
+  font-size: var(--xxxl-text-size-vw);
+  line-height: var(--xxxl-text-size-vw);
+  color: var(--main-color);
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dMain-color);
+  border-radius: 100%;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  cursor: pointer;
+  transition: all transform 0.4s ease;
+  width: max-content;
+}
+
+.iconBox > svg {
+  height: var(--medium-text-size-vh);
+  width: var(--medium-text-size-vh);
+}
+
+.iconBox:hover {
+  transform: scale(1.2);
+}

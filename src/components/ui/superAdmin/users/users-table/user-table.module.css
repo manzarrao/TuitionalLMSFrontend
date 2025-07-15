@@ -1,0 +1,133 @@
+.tableBox {
+  flex: calc(100% - 10px);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  z-index: 0;
+  /* border: 1px solid blue; */
+}
+
+.tableHead {
+  background-color: #afe2ff !important;
+  border: 1px solid #a0afb8;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  display: flex;
+  align-items: center;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--normal-text-size);
+  height: max-content;
+  padding: 10px 0px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.tableHeadCell {
+  /* border: 1px solid red; */
+  padding-left: 15px;
+}
+
+.tableBody {
+  display: block !important;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4 !important;
+  position: relative !important;
+}
+
+.tableBody > tr {
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: 1px solid #d4d4d4 !important;
+  display: flex;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box;
+  /* border: 1px solid red !important; */
+}
+
+.tableBody > tr:hover {
+  outline: none !important;
+  /* cursor: pointer; */
+  background-color: var(--dMain-color) !important;
+  border: 1px solid var(--main-color) !important;
+  border-radius: 10px;
+  transform: scale(1.01);
+  box-shadow: 0px 0px 4px 0px #38b6ff;
+  transform: scale(1.008);
+  z-index: 2;
+}
+.tableBody > :last-child {
+  border: none !important;
+}
+
+.tableBody > tr > td {
+  padding: 10px;
+  font-family: var(--leagueSpartan-regular-400) !important;
+  font-size: var(--regular-text-size-vh) !important;
+  line-height: var(--regular-text-size-vh) !important;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  user-select: text;
+}
+
+.profileCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileCell > span {
+  line-height: var(--regular-text-size-vh) !important;
+}
+
+.imageBox {
+  overflow: hidden;
+  border-radius: 40px;
+  position: relative;
+  border: 100%;
+  width: 3.5vh;
+  height: 3.5vh;
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+}
+
+.nameBox > :nth-child(1) {
+  margin: 0px !important;
+}
+
+.nameBox > :nth-child(2) {
+  color: var(--icon-color);
+  margin: 0px !important;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dMain-color);
+  border-radius: 5px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  cursor: pointer;
+  transition: all transform 0.4s ease;
+}
+
+.iconBox:hover {
+  transform: scale(1.3);
+}

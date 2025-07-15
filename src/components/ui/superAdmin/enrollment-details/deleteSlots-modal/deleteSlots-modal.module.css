@@ -1,0 +1,83 @@
+.mainBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  height: max-content;
+  border: 1px solid var(--dMain-color);
+  border-radius: 10px;
+  background-color: var(--dMain-color);
+  box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.15);
+  fill: #f1f7fa;
+  backdrop-filter: blur(5px);
+  padding: 25px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  gap: 2.5vh;
+}
+
+.deleteLogoBox {
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.563vw;
+  cursor: pointer;
+  fill: #f1f7fa;
+  transition: all 0.3s ease-in-out;
+}
+
+.close:hover {
+  fill: var(--dMain-color);
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.headingBox {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+.headingBox > :nth-child(1) {
+  text-align: center;
+  font-family: var(--leagueSpartan-medium-500);
+  font-size: var(--sub-medium-heading-vh);
+  margin: 0px !important;
+}
+
+.headingBox > :nth-child(2) {
+  text-align: center;
+  font-family: var(--leagueSpartan-light-300) !important;
+  font-size: var(--normal-text-size-vh);
+  margin: 0px !important;
+  color: var(--text-color);
+}
+
+.radioButtonsBox {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
