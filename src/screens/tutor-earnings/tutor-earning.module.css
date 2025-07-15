@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: flex;
+  gap: 10px;
+  height: max-content;
+}
+
+/* History Grid */
+.historyGrid {
+  display: flex;
+  gap: 10px;
+  height: 50%;
+  min-height: 50%;
+}
+
+/* Summary Grid */
+.summaryGrid {
+  display: flex;
+  gap: 10px;
+  height: 50%;
+  min-height: 50%;
+}

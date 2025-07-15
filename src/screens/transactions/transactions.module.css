@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.section1 {
+  display: flex;
+  /* border: 2px solid purple; */
+  gap: 15px;
+  height: max-content;
+}

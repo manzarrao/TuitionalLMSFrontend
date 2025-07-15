@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 10px;
+}
+
+.linkStyle {
+  color: var(--text-color);
+  font-family: var(--leagueSpartan-regular-400);
+  font-size: var(--medium-text-size-vh);
+  line-height: var(--medium-text-size-vh);
+  text-decoration: none;
+  transition: text-decoration 1s ease;
+  margin-left: auto;
+}
+
+.linkStyle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

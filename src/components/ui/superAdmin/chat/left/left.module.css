@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: calc(30% - 5px);
+  width: calc(30% - 5px);
+  max-width: calc(30% - 5px);
+  background-color: #f5f5f5;
+  border: 1px solid #d4d4d4;
+  border-radius: 2vh;
+  background-color: var(--transparent-blur-color);
+  backdrop-filter: blur(50px);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: max-content;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.usersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.newChatContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: max-content;
+  border-top: 1px solid #d4d4d4;
+}
