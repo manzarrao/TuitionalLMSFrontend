@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "claude/curriculum-module-docs-kjbod",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "claude/curriculum-module-docs-kjbod": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "claude/curriculum-module-docs-kjbod",
+    "origin"
+  ]
+}
